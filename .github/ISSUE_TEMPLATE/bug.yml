@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible MCP or DCC integration problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: dcc_version
+    attributes:
+      label: DCC and version
+    validations:
+      required: true
+  - type: input
+    id: server_version
+    attributes:
+      label: MCP server version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual and expected result
+    validations:
+      required: true
